@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+}
+
+.box {
+  width: 80%;
+  height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 10px;
+  gap: 30px;
+
+  background-color: aliceblue;
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+/* =========================
+   TOP AREA
+   ========================= */
+
+.top-area {
+  width: 90%;
+  height: 9%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+#task-area {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+
+  padding: 8px 12px;
+
+  border: 0.8px solid black;
+  border-radius: 12px;
+  outline: none;
+
+  font-size: 10px;
+}
+
+.box-btn {
+  width: 80px;
+  height: 100%;
+
+  flex-shrink: 0;
+
+  padding: 1px 5px;
+
+  color: white;
+  font-size: 8px;
+
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: 0.1s;
+}
+
+.add-btn {
+  background-color: rgb(248, 52, 52);
+}
+
+.clear-btn {
+  background-color: goldenrod;
+}
+
+
+/* =========================
+   TASK LIST
+   ========================= */
+
+.task-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+
+  overflow-y: auto;
+
+  flex: 1;
+  min-height: 0;
+}
+
+
+/* =========================
+   TASK CARD
+   ========================= */
+
+.task-card {
+  width: 80%;
+  min-height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px;
+
+  background-color: wheat;
+  border-radius: 10px;
+
+  font-size: 10px;
+}
+
+
+/* =========================
+   CHECKBOX
+   ========================= */
+
+.complete-check {
+  flex-shrink: 0;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   TASK TEXT
+   ========================= */
+
+.task-card span {
+  flex: 1;
+  min-width: 0;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* =========================
+   TASK BUTTONS CONTAINER
+   ========================= */
+
+.btns {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================
+   TASK BUTTONS
+   ========================= */
+
+.btns-btn {
+  width: 55px;
+  height: 25px;
+
+  padding: 1px 5px;
+
+  color: white;
+  font-size: 8px;
+
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: 0.1s;
+}
+
+.edit-btn {
+  background-color: green;
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+
+/* =========================
+   CLICK EFFECT
+   ========================= */
+
+button:active {
+  transform: scale(0.95);
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
