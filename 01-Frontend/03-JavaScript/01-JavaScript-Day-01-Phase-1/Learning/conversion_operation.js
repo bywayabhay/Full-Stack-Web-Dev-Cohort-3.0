@@ -9,8 +9,22 @@
 // "33abc" -> NaN
 // true -> 1; flase -> 0
 
-let isLoggedIn = 1
-let booleanIsLoggedIn = Boolean(isLoggedIn);
-console.log(typeof(booleanIsLoggedIn));
-console.log(booleanIsLoggedIn);
+// let isLoggedIn = 1
+// let booleanIsLoggedIn = Boolean(isLoggedIn);
+// console.log(typeof(booleanIsLoggedIn));
+// console.log(booleanIsLoggedIn);
+
+// ------------------Operations----------------------------
+let str1 = "hello "
+let str2 = "Abhay"
+
+// console.log(str1 + str2);
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+
+console.log(+true);
+console.log(+"");
+
 
