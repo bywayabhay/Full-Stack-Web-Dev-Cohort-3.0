@@ -10,7 +10,10 @@ function App() {
   // setFunctions -> has two work (i) update state (ii) rerender its parent functional component
   
   
-
+//Note -> hooks an only be called inside functional components
+// Rules of set functions:
+// 1-> if same value then no rerender and no update
+// 2-> 
   return (
     <div>
       <h1>Count is -{count}</h1>
